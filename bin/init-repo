@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -e # Fail on any error
+
+mkdir lib third_party
+git remote rm origin
+npm install
+
+git rm bin/init-repo
+echo "# $PACKAGE_NAME" > README.md
+git reset --soft ceac6c && git add . && git commit --no-verify --amend -m 'Initial commit.'
