@@ -8,4 +8,4 @@ npm install
 
 git rm bin/init-repo
 echo "# $PACKAGE_NAME" > README.md
-git reset --soft ceac6c && git add . && git commit --no-verify --amend -m 'Initial commit.'
+git reset --soft d36655 && git add . && git commit --no-verify --amend -m 'Initial commit.'
